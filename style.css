@@ -1,0 +1,380 @@
+/* css reset  */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html {
+    /* scroll-behavior: smooth; */
+}
+
+/* navigation  */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(0);
+    z-index: 1000;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(69, 69, 69,1);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 69, 69);
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 0.45rem;
+}
+
+#navbar ul li a {
+    color: rgba(255, 255, 255,0.8 );
+    display: block;
+    padding: 5px 20px;
+    margin: 7px -2px ;
+    text-decoration: none;
+    border-radius: 22px;
+    font-weight:500;
+}
+
+#navbar ul li a:hover {
+    /* background-color: white;
+    color: black; */
+
+}
+
+/* First section */
+#firstpage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#firstpage::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 15%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+.top_first p{
+    font-size: 0.7rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+.top_first a{
+    font-size: 0.65rem;
+    text-decoration: none;
+    font-weight:400;
+    color: rgb(0, 102, 204);
+}
+#mackbook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#mackbook::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 78%;
+    width: 100%;
+    top: 15%;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+.heading_mackbook{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.heading_mackbook h1{
+    font-size: 2.3rem;
+    font-weight:bolder;
+}
+.heading_mackbook h3{
+    font-size: 1.2rem;
+    font-weight: 200px;
+    text-align: center;
+    line-height: 33px;
+}
+.heading_mackbook a{
+    font-size: 1rem;
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(0, 102, 204);
+}
+.heading_mackbook a:hover{
+    text-decoration:underline;
+}
+.mac_img img{
+    height: 300px;
+    width: 930px;
+    margin-top: 9%;
+    object-fit: cover;
+}
+
+/* section iphone14pro */
+
+#iphone14pro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#iphone14pro::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    height: 75%;
+    width: 100%;
+    top: 90%;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+.heading_iphone14pro {
+    position: relative;
+    margin-top: -245px;
+    left: 35%;;
+}
+.heading_iphone14pro h1{
+    font-size: 2.3rem;
+    font-weight:bolder;
+    color: white;
+    margin-top: 30px;
+    position: relative;
+}
+.heading_iphone14pro h3{
+    font-size: 1.2rem;
+    font-weight: 200px;
+    text-align: center;
+    line-height: 33px;
+    color: white;
+    position: relative;
+}
+.heading_iphone14pro a{
+    font-size: 1rem;
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(0, 102, 204);
+    position: relative;
+}
+.heading_iphone14pro a:hover{
+    text-decoration:underline;
+}
+.iphone14pro_img img{
+    /* position: absolute; */
+    width: 873px;
+    height: 210px;
+    margin-top: 156px;
+    margin-left: -160px;
+}
+
+/* section iphone14 */
+
+
+#iphone14{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#iphone14::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 75%;
+    width: 100%;
+    top: 165%;
+    left: 0;
+    z-index: -1;
+    opacity: 1;
+}
+.heading_iphone14 {
+    position: relative;
+    margin-top: -295px;
+    left: 20%;
+}
+.heading_iphone14 h1{
+    font-size: 2.3rem;
+    font-weight:bolder;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    position: relative;
+}
+.heading_iphone14 h3{
+    font-size: 1.2rem;
+    font-weight: 200px; 
+    text-align: center;
+    line-height: 33px;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+.heading_iphone14 a{
+    font-size: 1rem;
+    margin-left: 40px;
+    text-decoration: none;
+    color: rgb(0, 102, 204);
+    position: relative;
+}
+.heading_iphone14 a:hover{
+    text-decoration:underline;
+}
+.iphone14_img img{
+    /* position: absolute; */
+    width: 600px;
+    height: 270px;
+    margin-top: 97px;
+    margin-left: -160px;
+}
+
+/* section homepage */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    background-color: #ffffff;
+    height: auto;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(0, 0, 0, 0.8); */
+    /* padding: 20px 20px 0px 20px; */
+    /* font-size: 30px; */
+    text-align: center;
+  }
+.heading_homepage h1{
+    font-size: 1.8rem;
+    font-weight:bolder;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    position: relative;
+}
+.heading_homepage h3{
+    font-size: 0.8rem;
+    font-weight: 200px; 
+    text-align: center;
+    margin: 5px 5px;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+.heading_homepage a{
+    font-size: 0.8rem;
+    margin-left: 15px;
+    text-decoration: none;
+    color: rgb(0, 102, 204);
+    position: relative;
+}
+.heading_homepage a:hover{
+    text-decoration:underline;
+}
+.homepage_1_img img{
+    width: 420px;
+}
+.homepage_mackbook_img img{
+    width: 370px;
+}
+.homepage_watch_img img{
+    width: 332px;
+    margin-bottom: -4px;
+}
+.homepage_ipadpro_img img{
+    width: 490px;
+    margin-bottom: -4px;
+}
+.homepage_airpod_img img{
+    width: 370px;
+    margin-bottom: -5px;
+}
+.homepage_trade_img img{
+    width: 490px;
+    margin-top: 25px;
+}
+
+/* section footer */
+
+footer{
+    background: rgb(245, 245, 247);
+}
+#footer_mainbox{
+    margin: 0px 140px 0px 140px ;
+    padding: 10px ;
+}
+footer p {
+    font-size: 0.5rem;
+    margin: 10px 10px ;
+}
+.footer_flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* padding: 20px; */
+    background-color: rgb(245, 245, 247);
+  }
+
+  .footer_flex-item {
+    width: 18%; /* Adjust as needed to control column width */
+    padding: 10px;
+    background-color: rgb(245, 245, 247);
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+  }
+  .footer_flex-item h3{
+    font-size: 0.5rem;
+    padding: 5px 0px;
+  }
+  /* .footer_flex-item ul {
+    
+  } */
+  .footer_flex-item ul li{
+    list-style: none;
+    font-size: 0.5rem;
+  }
+.footer_flex-item ul li a{
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    padding: 5px 0px;
+    text-decoration: none;
+    font-weight:500;
+}
+.footer_flex-item ul li a:hover{
+    text-decoration: underline;
+}
+.vl {
+    border-left: 1px solid rgb(0, 0, 0);
+    height: 12px;
+    margin-left: 5px;
+  }
+.last_footer a{
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 0.5rem;
+    text-decoration: none;
+    font-weight:600;
+}
+.last-a{
+    margin-left: 39%;
+}

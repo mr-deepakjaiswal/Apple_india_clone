@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .carousel {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-slide {
+    flex: 0 0 100%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .carousel-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .carousel-indicator.active {
+    background-color: black;
+  }
+</style>
+</head>
+<body>
+
+<div class="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-slide">
+      <img src="/airpods.jpg" alt="Slide 1">
+    </div>
+    <div class="carousel-slide">
+      <img src="/ipadpro.jpg" alt="Slide 2">
+    </div>
+    <div class="carousel-slide">
+      <img src="/iphone14.jpg" alt="Slide 3">
+    </div>
+  </div>
+  
+  <div class="carousel-indicators">
+    <div class="carousel-indicator active"></div>
+    <div class="carousel-indicator"></div>
+    <div class="carousel-indicator"></div>
+  </div>
+  
+  <button class="carousel-control prev">Previous</button>
+  <button class="carousel-control next">Next</button>
+</div>
+
+<script>
+  const carouselInner = document.querySelector('.carousel-inner');
+  const prevButton = document.querySelector('.carousel-control.prev');
+  const nextButton = document.querySelector('.carousel-control.next');
+  const indicators = document.querySelectorAll('.carousel-indicator');
+
+  let currentSlide = 0;
+
+  function updateCarousel() {
+    carouselInner.style.transform = `translateX(-${currentSlide * 100}%)`;
+    indicators.forEach((indicator, index) => {
+      indicator.classList.toggle('active', index === currentSlide);
+    });
+  }
+
+  prevButton.addEventListener('click', () => {
+    currentSlide = Math.max(currentSlide - 1, 0);
+    updateCarousel();
+  });
+
+  nextButton.addEventListener('click', () => {
+    currentSlide = Math.min(currentSlide + 1, 2);
+    updateCarousel();
+  });
+
+  indicators.forEach((indicator, index) => {
+    indicator.addEventListener('click', () => {
+      currentSlide = index;
+      updateCarousel();
+    });
+  });
+</script>
+
+</body>
+</html>
